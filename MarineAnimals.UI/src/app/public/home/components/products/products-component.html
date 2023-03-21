@@ -1,21 +1,31 @@
 <div class="container">
-    <mat-grid-list cols="3" rowHeight="500px">
-        <mat-grid-tile *ngFor="let product of products">
-          <a href="{{product.url}}" class="custom-card card-levitate" target="_blank">
-          <mat-card class="" >
-            <mat-card-header>
-              <mat-card-title>{{ product.name }}</mat-card-title>
-            </mat-card-header>
-            <img mat-card-image [src]="product.image_url" width="200" height="200" class="center-image">
-            <mat-card-content>
-              <p>{{ product.description }}</p>
-              <div class="featured-icon-container" *ngIf="product.featured">
-                <img src="assets/icons8-star-30.png" style="width: 30px">
-                <p>Offer!</p>
-              </div>
-            </mat-card-content>
-          </mat-card>
-          </a>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
+  <mat-grid-list cols="3" rowHeight="480px">
+    <mat-grid-tile *ngFor="let product of products">
+      <a
+        href="{{product.url}}"
+        class="custom-card card-levitate"
+        target="_blank"
+      >
+        <mat-card class="">
+          <mat-card-header>
+            <mat-card-title>{{ product.name }}</mat-card-title>
+          </mat-card-header>
+          <img
+            mat-card-image
+            [src]="product.image_url"
+            width="200"
+            height="200"
+            class="center-image"
+          />
+          <mat-card-content>
+            <p>{{ product.description }}</p>
+            <div class="featured-icon-container" *ngIf="product.featured">
+              <img src="assets/icons8-star-30.png" style="width: 30px" />
+              <p>Offer!</p>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

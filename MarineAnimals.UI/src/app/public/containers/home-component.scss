@@ -4,7 +4,7 @@
     background-position: center;
     position: absolute; 
     top: 0; bottom: 0; left: 0; right: 0; 
-    height: 110vh;
+    overflow: auto;
 
 }
   
@@ -54,6 +54,13 @@
   
 .mat-menu-item:hover {
     background-color: #f0f0f0;
+}
+
+::ng-deep footer{
+    background-color:rgba(255, 255, 255, 0.8); /* Color de fondo semitransparente */
+    padding: 8px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

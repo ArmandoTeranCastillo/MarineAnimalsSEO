@@ -1,18 +1,35 @@
 <div class="wallpaper">
-    <a href="/home" style="text-decoration: none;">
-        <h1 class="title">Marine Animals</h1>
-    </a>
-    <div class="bar">
-        <a  class="mat-button" mat-button [matMenuTriggerFor]="menu">Products</a>
-        <div> | </div>
-        <a style="text-decoration: none;" class="mat-button" mat-button routerLink="/home/features">Offers</a>
-        <mat-menu #menu="matMenu" class="mat-menu">
-            <button mat-menu-item routerLink="/home/products">All</button>
-            <button mat-menu-item routerLink="/home/cups">Cups</button>
-            <button mat-menu-item routerLink="/home/tshirts">T-Shirts</button>
-            <button mat-menu-item routerLink="/home/cellphonecases">Cellphone Cases</button>
-        </mat-menu>
-    </div>
-<router-outlet></router-outlet>
+  <a href="/home" style="text-decoration: none">
+    <h1 class="title">Marine Animals</h1>
+  </a>
+  <div class="bar">
+    <a class="mat-button" mat-button [matMenuTriggerFor]="menu">Products</a>
+    <div>|</div>
+    <a
+      style="text-decoration: none"
+      class="mat-button"
+      mat-button
+      routerLink="/home/features"
+      >Offers</a
+    >
+    <mat-menu #menu="matMenu" class="mat-menu">
+      <button mat-menu-item routerLink="/home/products">All</button>
+      <button mat-menu-item routerLink="/home/mugs">Mugs</button>
+      <button mat-menu-item routerLink="/home/tshirts">T-Shirts</button>
+      <button mat-menu-item routerLink="/home/cellphonecases">
+        Cellphone Cases
+      </button>
+    </mat-menu>
+  </div>
+  <router-outlet></router-outlet>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><span>Marine Animals © 2023</span></li>
+      </ul>
+    </nav>
+  </footer>
 </div>
-

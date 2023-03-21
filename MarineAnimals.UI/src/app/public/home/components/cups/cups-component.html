@@ -1,26 +1,102 @@
-<div class="container">
+<div style="display: block">
+  <div class="container">
+    <div class="presentation">
+      <h1>Discover the Best Collection of Marine Animal Mugs!</h1>
+      <p>
+        Are you a <strong>marine animal</strong> lover looking for the
+        <strong>perfect mug</strong> to enjoy your favorite beverage? Look no
+        further than our amazing collection of
+        <strong>marine animal mugs!</strong> From playful
+        <strong>dolphins</strong> to majestic <strong>whales</strong>, our mugs
+        feature a variety of stunning marine creatures that will delight any
+        <strong>ocean enthusiast</strong>.
+      </p>
+      <p>
+        Crafted from high-quality materials, our mugs are not only beautiful but
+        also durable and easy to clean. They make the perfect gift for
+        birthdays, holidays, or any special occasion.
+      </p>
+      <p>
+        Browse our selection today and discover the perfect mug to add to your
+        collection. With our fast and reliable shipping, you'll be sipping your
+        favorite drink from your new marine animal mug in no time!
+      </p>
+    </div>
     <mat-grid-list cols="3" rowHeight="500px">
-        <ng-container *ngFor="let product of products">
-          <mat-grid-tile *ngIf="product.category_id === 2 ">
-            <a href="{{product.url}}" class="custom-card card-levitate" target="_blank">
+      <ng-container *ngFor="let product of products">
+        <mat-grid-tile *ngIf="product.category_id === 2 ">
+          <a
+            href="{{product.url}}"
+            class="custom-card card-levitate"
+            target="_blank"
+          >
             <mat-card>
               <mat-card-header>
                 <mat-card-title>{{ product.name }}</mat-card-title>
               </mat-card-header>
-              <img mat-card-image [src]="product.image_url" width="200" height="200" class="center-image">
+              <img
+                mat-card-image
+                [src]="product.image_url"
+                width="200"
+                height="200"
+                class="center-image"
+              />
               <mat-card-content>
                 <p>{{ product.description }}</p>
                 <div class="featured-icon-container" *ngIf="product.featured">
-                  <img src="assets/icons8-star-30.png" style="width: 30px">
+                  <img src="assets/icons8-star-30.png" style="width: 30px" />
                   <p>Offer!</p>
                 </div>
               </mat-card-content>
             </mat-card>
-            </a>
-          </mat-grid-tile>
-        </ng-container>
-        <div *ngIf="!products || products.length === 0">
-          No hay ningún producto favorito
-        </div>
-      </mat-grid-list>
+          </a>
+        </mat-grid-tile>
+      </ng-container>
+      <div *ngIf="!products || products.length === 0">
+        No hay ningún producto favorito
+      </div>
+    </mat-grid-list>
+
+    <div class="presentation">
+      <h1>Why Choose Ocean Mugs?</h1>
+      <p>
+        Are you a marine life enthusiast? Do you love starting your day with a
+        cup of coffee or tea? If yes, then Ocean Mugs is the perfect destination
+        for you! We offer a wide range of high-quality marine animal mugs that
+        are perfect for marine life lovers.
+      </p>
+
+      <h2>Our Products</h2>
+      <p>
+        At Ocean Mugs, we have a diverse collection of marine animal mugs that
+        come in various sizes, shapes, and designs. From dolphin mugs to whale
+        mugs, we have them all! Our mugs are made of high-quality materials that
+        ensure longevity and durability. Moreover, they are microwave and
+        dishwasher safe, making them perfect for everyday use.
+      </p>
+
+      <h2>Unmatched Customer Service</h2>
+      <p>
+        We value our customers, and their satisfaction is our top priority. Our
+        team of experts is always ready to assist you with any queries or
+        concerns you may have. Moreover, we offer free shipping and easy returns
+        to ensure a hassle-free shopping experience for our customers.
+      </p>
+
+      <h2>Affordable Prices</h2>
+      <p>
+        At Ocean Mugs, we believe that everyone should have access to
+        high-quality marine animal mugs without breaking the bank. Therefore, we
+        offer our products at affordable prices without compromising on quality.
+        We also offer various discounts and deals from time to time to make our
+        products even more accessible to our customers.
+      </p>
+
+      <p>
+        So, if you're looking for high-quality marine animal mugs, look no
+        further than Ocean Mugs. Browse our collection today and find the
+        perfect mug to start your day with!
+      </p>
     </div>
+  </div>
+</div>
