@@ -28,6 +28,14 @@
                             <strong>Slug:</strong>
                             {{ $category->slug }}
                         </div>
+                        <div class="form-group">
+                            <strong>Description:</strong>
+                            {{ $category->description }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Image Url:</strong>
+                            {{ $category->image_url }}
+                        </div>
 
                     </div>
                 </div>

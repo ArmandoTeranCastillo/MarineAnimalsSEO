@@ -40,6 +40,7 @@
 										<th>Slug</th>
 										<th>Description</th>
 										<th>Image Url</th>
+										<th>Price</th>
 										<th>Url</th>
 										<th>Featured</th>
 										<th>Category Id</th>
@@ -56,6 +57,7 @@
 											<td>{{ $product->slug }}</td>
 											<td>{{ $product->description }}</td>
 											<td>{{ $product->image_url }}</td>
+											<td>{{ $product->price }}</td>
 											<td>{{ $product->url }}</td>
 											<td>{{ $product->featured }}</td>
 											<td>{{ $product->category_id }}</td>

@@ -1,26 +1,98 @@
-<div class="container">
+<div style="display: block">
+  <div class="container">
+    <div class="presentation">
+      <h1>Protect Your Phone in Style with Our Marine-Themed Phone Cases</h1>
+
+      <p>
+        Our marine-themed phone cases are the perfect way to keep your phone
+        safe and stylish at the same time. Featuring unique designs inspired by
+        the beauty and diversity of marine life, our phone cases are made with
+        high-quality materials to ensure maximum protection for your device.
+      </p>
+
+      <p>
+        Our collection includes phone cases with designs featuring whales,
+        dolphins, sharks, and other marine creatures. Choose from a variety of
+        sizes and styles to find the perfect match for your phone. All of our
+        phone cases are designed with durability in mind and are made to
+        withstand everyday wear and tear.
+      </p>
+
+      <p>
+        Not only will you be protecting your phone with one of our cases, but
+        you will also be supporting the conservation of our oceans and their
+        inhabitants. We are committed to sustainability and use eco-friendly
+        materials wherever possible, so you can feel good about your purchase
+        knowing that it was made with the planet in mind.
+      </p>
+
+      <p>
+        Browse our collection today and find the perfect marine-themed phone
+        case to protect your device in style!
+      </p>
+    </div>
     <mat-grid-list cols="3" rowHeight="500px">
-        <ng-container *ngFor="let product of products">
-          <mat-grid-tile *ngIf="product.category_id === 3 ">
-            <a href="{{product.url}}" class="custom-card card-levitate" target="_blank">
+      <ng-container *ngFor="let product of products">
+        <mat-grid-tile *ngIf="product.category_id === 3 ">
+          <a
+            href="{{product.url}}"
+            class="custom-card card-levitate"
+            target="_blank"
+          >
             <mat-card>
               <mat-card-header>
                 <mat-card-title>{{ product.name }}</mat-card-title>
               </mat-card-header>
-              <img mat-card-image [src]="product.image_url" width="200" height="200" class="center-image">
+              <img
+                mat-card-image
+                [src]="product.image_url"
+                width="200"
+                height="200"
+                class="center-image"
+              />
               <mat-card-content>
                 <p>{{ product.description }}</p>
                 <div class="featured-icon-container" *ngIf="product.featured">
-                    <img src="assets/icons8-star-30.png" style="width: 30px">
-                    <p>Offer!</p>
-                  </div>
+                  <img src="assets/icons8-star-30.png" style="width: 30px" />
+                  <p>Offer!</p>
+                </div>
               </mat-card-content>
             </mat-card>
-            </a>
-          </mat-grid-tile>
-        </ng-container>
-        <div *ngIf="!products || products.length === 0">
-          No hay ningún producto favorito
-        </div>
-      </mat-grid-list>
+          </a>
+        </mat-grid-tile>
+      </ng-container>
+      <div *ngIf="!products || products.length === 0">
+        No hay ningún producto favorito
+      </div>
+    </mat-grid-list>
+
+    <div class="presentation">
+      <h1>Why Choose Our Marine-Themed Phone Cases?</h1>
+      <p>
+        At our website, we offer a wide range of marine-themed phone cases
+        featuring unique designs inspired by the beauty and diversity of marine
+        life. Our phone cases not only protect your device from scratches and
+        damage, but they also allow you to show your love and support for marine
+        conservation efforts.
+      </p>
+      <p>
+        Our phone cases are made from high-quality materials to ensure maximum
+        protection for your device. We use eco-friendly materials wherever
+        possible to support sustainability efforts and reduce our impact on the
+        environment. Our phone cases are designed to fit a variety of phone
+        models, so you can find the perfect match for your device.
+      </p>
+      <p>
+        When you purchase one of our marine-themed phone cases, you are
+        supporting the conservation of our oceans and their inhabitants. A
+        portion of each sale goes towards marine conservation efforts, so you
+        can feel good about your purchase knowing that you are making a positive
+        impact on the environment.
+      </p>
+      <p>
+        Browse our collection of marine-themed phone cases today and show your
+        love for marine life while protecting your device in style!
+      </p>
     </div>
+  </div>
+</div>

@@ -1,31 +1,82 @@
-<div class="container">
-  <mat-grid-list cols="3" rowHeight="480px">
-    <mat-grid-tile *ngFor="let product of products">
-      <a
-        href="{{product.url}}"
-        class="custom-card card-levitate"
-        target="_blank"
-      >
-        <mat-card class="">
-          <mat-card-header>
-            <mat-card-title>{{ product.name }}</mat-card-title>
-          </mat-card-header>
-          <img
-            mat-card-image
-            [src]="product.image_url"
-            width="200"
-            height="200"
-            class="center-image"
-          />
-          <mat-card-content>
-            <p>{{ product.description }}</p>
-            <div class="featured-icon-container" *ngIf="product.featured">
-              <img src="assets/icons8-star-30.png" style="width: 30px" />
-              <p>Offer!</p>
-            </div>
-          </mat-card-content>
-        </mat-card>
-      </a>
-    </mat-grid-tile>
-  </mat-grid-list>
+<div style="display: block">
+  <div class="container">
+    <div class="presentation">
+      <h1>Dive into the World of Marine-Themed Products</h1>
+      <p>
+        At Marine Products, we strive to provide a seamless shopping experience
+        for our customers. Our website is easy to navigate, and we offer secure
+        payments and fast shipping so that you can enjoy your marine-themed
+        products as soon as possible.
+      </p>
+    </div>
+    <mat-grid-list cols="3" rowHeight="500px">
+      <ng-container *ngFor="let category of categories">
+        <mat-grid-tile>
+          <a href="#/home/{{category.slug}}" class="custom-card card-levitate">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title class="list-categories"
+                  >{{ category.name }}</mat-card-title
+                >
+              </mat-card-header>
+              <img
+                mat-card-image
+                [src]="category.image_url"
+                width="200"
+                height="200"
+                class="center-image"
+              />
+              <mat-card-content>
+                <p>{{ category.description }}</p>
+              </mat-card-content>
+            </mat-card>
+          </a>
+        </mat-grid-tile>
+      </ng-container>
+      <div *ngIf="!categories || categories.length === 0">
+        No hay ningún producto favorito
+      </div>
+    </mat-grid-list>
+
+    <div class="presentation">
+      <h2>Clothing Collection</h2>
+      <p>
+        Our clothing collection offers a range of comfortable and stylish
+        t-shirts, hoodies, and sweatshirts that are perfect for any occasion. We
+        use high-quality materials to ensure that our products are not only
+        fashionable but also durable.
+      </p>
+
+      <h2>Phone Case Collection</h2>
+      <p>
+        Apart from clothing, we have an exclusive range of phone cases that come
+        in various designs, from colorful jellyfish to elegant seahorses. Our
+        phone cases are not only visually appealing but also offer excellent
+        protection for your device.
+      </p>
+
+      <h2>Discover the Beauty of the Ocean</h2>
+      <p>
+        Whether you are a marine enthusiast or someone who just loves
+        marine-themed products, we have something for everyone. Our website is
+        easy to navigate, and we offer a seamless shopping experience to all our
+        customers.
+      </p>
+
+      <h2>Commitment to Sustainability</h2>
+      <p>
+        We take pride in our commitment to sustainability and use eco-friendly
+        materials wherever possible. Our products are not only beautiful but
+        also contribute to the conservation of our oceans and marine life.
+      </p>
+
+      <p>
+        In conclusion, we invite you to explore our collection and dive into the
+        world of marine-themed products. Our products are perfect for anyone who
+        loves marine life and wants to incorporate its beauty into their
+        everyday life. Thank you for visiting our website, and we hope to see
+        you soon!
+      </p>
+    </div>
+  </div>
 </div>

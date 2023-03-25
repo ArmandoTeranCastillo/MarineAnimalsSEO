@@ -22,6 +22,11 @@
             {!! $errors->first('image_url', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
+            {{ Form::label('price') }}
+            {{ Form::text('price', $product->price, ['class' => 'form-control' . ($errors->has('price') ? ' is-invalid' : ''), 'placeholder' => 'Price']) }}
+            {!! $errors->first('price', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
             {{ Form::label('url') }}
             {{ Form::text('url', $product->url, ['class' => 'form-control' . ($errors->has('url') ? ' is-invalid' : ''), 'placeholder' => 'Url']) }}
             {!! $errors->first('url', '<div class="invalid-feedback">:message</div>') !!}

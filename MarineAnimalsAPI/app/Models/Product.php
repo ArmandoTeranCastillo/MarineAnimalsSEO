@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $slug
  * @property $description
  * @property $image_url
+ * @property $price
  * @property $url
  * @property $featured
  * @property $category_id
@@ -28,9 +29,7 @@ class Product extends Model
     static $rules = [
 		'name' => 'required',
 		'slug' => 'required',
-		'description' => 'required',
-		'image_url' => 'required',
-		'url' => 'required',
+		'price' => 'required',
 		'featured' => 'required',
 		'category_id' => 'required',
     ];
@@ -42,7 +41,7 @@ class Product extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','slug','description','image_url','url','featured','category_id'];
+    protected $fillable = ['name','slug','description','image_url','price','url','featured','category_id'];
 
 
     /**

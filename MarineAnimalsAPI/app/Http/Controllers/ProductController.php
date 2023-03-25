@@ -18,13 +18,12 @@ class ProductController extends Controller
      */
     public function index()
     {
-
+        //$products = Product::paginate();
         $products = Product::all();
-        return response()-> json($products);
 
-        /*$products = Product::paginate();
+        return response()->json($products);
 
-        return view('product.index', compact('products'))
+        /*return view('product.index', compact('products'))
             ->with('i', (request()->input('page', 1) - 1) * $products->perPage());*/
     }
 
@@ -33,7 +32,6 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    //create
     public function create()
     {
         $product = new Product();

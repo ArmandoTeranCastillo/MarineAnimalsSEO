@@ -1,26 +1,78 @@
-<div class="container">
+<div style="display: block">
+  <div class="container">
+    <div class="presentation">
+      <h1>Explore our Marine-themed T-Shirt Collection</h1>
+      <p>
+        Dive into our collection of marine-themed t-shirts and add a touch of
+        oceanic charm to your wardrobe. Our collection features a range of
+        designs inspired by marine creatures such as whales, dolphins, and
+        sharks, printed on high-quality, comfortable fabrics. We believe in
+        sustainability and use eco-friendly materials wherever possible. Our
+        t-shirts are not only stylish but also contribute to the conservation of
+        our oceans and marine life.
+      </p>
+    </div>
     <mat-grid-list cols="3" rowHeight="500px">
-        <ng-container *ngFor="let product of products">
-          <mat-grid-tile *ngIf="product.category_id === 1 ">
-            <a href="{{product.url}}" class="custom-card card-levitate" target="_blank">
+      <ng-container *ngFor="let product of products">
+        <mat-grid-tile *ngIf="product.category_id === 1 ">
+          <a
+            href="{{product.url}}"
+            class="custom-card card-levitate"
+            target="_blank"
+          >
             <mat-card>
               <mat-card-header>
                 <mat-card-title>{{ product.name }}</mat-card-title>
               </mat-card-header>
-              <img mat-card-image [src]="product.image_url" width="200" height="200" class="center-image">
+              <img
+                mat-card-image
+                [src]="product.image_url"
+                width="200"
+                height="200"
+                class="center-image"
+              />
               <mat-card-content>
                 <p>{{ product.description }}</p>
                 <div class="featured-icon-container" *ngIf="product.featured">
-                  <img src="assets/icons8-star-30.png" style="width: 30px">
+                  <img src="assets/icons8-star-30.png" style="width: 30px" />
                   <p>Offer!</p>
                 </div>
               </mat-card-content>
             </mat-card>
-            </a>
-          </mat-grid-tile>
-        </ng-container>
-        <div *ngIf="!products || products.length === 0">
-          No hay ningún producto favorito
-        </div>
-      </mat-grid-list>
+          </a>
+        </mat-grid-tile>
+      </ng-container>
+      <div *ngIf="!products || products.length === 0">
+        No hay ningún producto favorito
+      </div>
+    </mat-grid-list>
+
+    <div class="presentation">
+      <h1>Why Choose Ocean T-Shirts?</h1>
+      <p>
+        Our marine-themed t-shirts are the perfect way to add a touch of oceanic
+        charm to your wardrobe while showing your love and support for marine
+        life.
+      </p>
+      <p>
+        Our unique designs, inspired by whales, dolphins, sharks, and other
+        marine creatures, are printed on high-quality materials for ultimate
+        comfort and durability.
+      </p>
+      <p>
+        By purchasing one of our t-shirts, you are not only adding a stylish
+        piece to your collection but also contributing to the conservation of
+        our oceans and their inhabitants.
+      </p>
+      <p>
+        We are committed to sustainability and use eco-friendly materials
+        wherever possible, so you can wear your support for the planet on your
+        sleeve.
+      </p>
+      <p>
+        Browse our collection today and show your love for marine life with our
+        unique and sustainable t-shirts.
+      </p>
     </div>
+  </div>
+</div>

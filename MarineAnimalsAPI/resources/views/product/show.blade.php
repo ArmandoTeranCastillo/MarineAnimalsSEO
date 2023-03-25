@@ -37,6 +37,10 @@
                             {{ $product->image_url }}
                         </div>
                         <div class="form-group">
+                            <strong>Price:</strong>
+                            {{ $product->price }}
+                        </div>
+                        <div class="form-group">
                             <strong>Url:</strong>
                             {{ $product->url }}
                         </div>

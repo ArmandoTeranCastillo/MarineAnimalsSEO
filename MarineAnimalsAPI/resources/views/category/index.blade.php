@@ -38,6 +38,8 @@
                                         
 										<th>Name</th>
 										<th>Slug</th>
+										<th>Description</th>
+										<th>Image Url</th>
 
                                         <th></th>
                                     </tr>
@@ -49,6 +51,8 @@
                                             
 											<td>{{ $category->name }}</td>
 											<td>{{ $category->slug }}</td>
+											<td>{{ $category->description }}</td>
+											<td>{{ $category->image_url }}</td>
 
                                             <td>
                                                 <form action="{{ route('categories.destroy',$category->id) }}" method="POST">

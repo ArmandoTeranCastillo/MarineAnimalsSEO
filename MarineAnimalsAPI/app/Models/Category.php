@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property $id
  * @property $name
  * @property $slug
+ * @property $description
+ * @property $image_url
  * @property $created_at
  * @property $updated_at
  *
@@ -32,7 +34,7 @@ class Category extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','slug'];
+    protected $fillable = ['name','slug','description','image_url'];
 
 
     /**
